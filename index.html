@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="wrapper-actions">
+            <div class="btn-default">
+                <button class="u-font-size-20 ">本日</button>
+            </div>
+            <div class="target-date">
+                <button class="btn-previous-date"><i class="fa fa-solid fa-angle-left"></i></button>
+                <span class="current-year"></span>
+                <span class="u-font-size-20 u-font-weight-bold current-month-day"></span>
+                <span class="u-font-size-20 u-font-weight-bold text-month">(火)</span>
+                <button class="btn-next-date"><i class="fa fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="btn-booking-detail1">
+                <button class="u-font-size-20 u-font-weight-bold">GO</button>
+            </div>
+            <div class="btn-booking-detail2">
+                <button class="u-font-size-20 u-font-weight-bold">クイック受付</button>
+            </div>
+            <div class="show-by-hours">
+                <button class="btn-show-6h u-font-weight-bold">6H</button>
+                <button class="btn-show-all u-font-weight-bold active">ALL</button>
+            </div>
+            <div class="type-show-table">
+                <button class="btn-type-horizontal active"><i class="fa fa-light fa-bars fa-xl"></i></button>
+                <button class="btn-type-vertical"><i class="fa fa-light fa-bars fa-xl"></i></button>
+                <button class="btn-type-list"><i class="fa fa-sharp fa-solid fa-list-ul fa-xl"></i></button>
+            </div>
+        </section>
+
+        <section class="wrapper-schedule">
+            <section class="h-static-header">
+                <div class="blank-space"></div>
+                <div class="header-group"></div>
+                <div class="line"></div>
+            </section>
+            <section class="calender-body">
+                <div class="v-header-container"></div>
+                <div class="calendar-grid"></div>
+            </section>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

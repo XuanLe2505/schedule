@@ -1,0 +1,349 @@
+* {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Han Sans JP", sans-serif;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+}
+
+:root {
+    --white-gray: #F0F2F7;
+    --white: #FFFFFF;
+    --dark-gray: #3D4753;
+    --light-gray: #D9DCE3;
+    --red: #FF0000;
+    --light-black: #1B2330;
+    --black: #000000;
+}
+
+.u-font-size-20 {
+    font-size: 20px;
+}
+
+.u-font-size-10 {
+    font-size: 10px;
+}
+
+.u-font-weight-bold {
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    width: 1024px;
+    min-height: 768px;
+    margin-top: 66px;
+    margin-left: 120px;
+    white-space: nowrap;
+}
+
+.wrapper-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 15px 20px 35px 10px;
+}
+
+.btn-default button {
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+.btn-booking-detail1 button,
+.btn-booking-detail2 button {
+    color: var(--light-black);
+    background-color: var(--white);
+}
+
+.btn-booking-detail1 button,
+.btn-booking-detail2 button,
+.btn-default button {
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    padding: 4px 9px 5px;
+    line-height: 29px;
+}
+
+.target-date {
+    margin-left: 30px;
+    margin-right: 83px;
+}
+
+.target-date .current-year {
+    font-size: 18px;
+}
+
+.btn-previous-date,
+.btn-next-date {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--light-gray);
+}
+
+.btn-booking-detail2 {
+    margin-left: 20px;
+    margin-right: 45px;
+}
+
+.show-by-hours,
+.type-show-table {
+    display: inline-flex;
+    border: 1px solid var(--dark-gray);
+    border-radius: 3px;
+}
+
+.show-by-hours button {
+    height: 38px;
+    padding: 8px 10px;
+    background-color: var(--white);
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.show-by-hours button.active {
+    position: relative;
+    background-color: var(--dark-gray);
+    border: 1px solid var(--dark-gray);
+    color: var(--white);
+}
+
+.show-by-hours {
+    margin-right: 40px;
+}
+
+.type-show-table {
+    border: none;
+    background-color: var(--light-gray);
+}
+
+.type-show-table button {
+    background-color: var(--light-gray);
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.btn-type-horizontal i,
+.btn-type-vertical i {
+    transform: matrix(1, 0, 0.5, 1, 0, 0);
+}
+
+.btn-type-vertical i {
+    rotate: 90deg;
+}
+
+.type-show-table button.active {
+    background-color: var(--dark-gray);
+    border-radius: 3px;
+}
+
+/* appointments schedule */
+.wrapper-schedule {
+    margin: 0 10px;
+}
+
+.h-static-header {
+    display: inline-block;
+}
+
+.blank-space {
+    position: fixed;
+    width: 81px;
+    height: 44px;
+    background-color: var(--white);
+}
+
+.header-group {
+    position: relative;
+    margin-left: 88px;
+}
+
+.header-group span:first-of-type() {
+    border-left: 2px solid var(--white);
+}
+
+.line {
+    position: relative;
+    top: -4px;
+    height: 4px;
+    margin-left: 90px;
+    background-color: var(--light-gray);
+}
+
+.h-static-header .time {
+    display: inline-block;
+    font-size: 10px;
+    width: 56px;
+    height: 44px;
+    padding: 16px 19px 13px 9px;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--white-gray);
+    margin-left: 2px;
+}
+
+.v-header {
+    display: flex;
+    width: 81px;
+    border: 1px solid var(--light-gray);
+    align-items: center;
+}
+
+.v-header-container {
+    float: left;
+    background-color: #fff;
+}
+
+.v-header-name {
+    font-size: 10px;
+    height: 100%;
+    flex-grow: 1;
+    padding-left: 8px;
+}
+
+.v-slot {
+    font-size: 10px;
+    padding: 2px;
+    height: 19px;
+    border: 1px solid var(--light-gray);
+    border-right: none;
+    border-bottom: none;
+}
+
+.v-header-container .v-header .v-slot-container .v-slot:nth-child(even) {
+    height: 20px;
+}
+
+.v-header-container .v-header:first-child {
+    border-top: none;
+}
+
+.v-header-container {
+    border-top: 1px solid var(--light-gray);
+}
+
+.v-header-container .v-header:not(:first-child) {
+    border-top: none;
+}
+
+.v-slot-container .v-slot:first-child {
+    border-top: none;
+}
+
+.v-header-container .v-header:nth-child(odd) {
+    background-color: var(--white-gray);
+}
+
+.calender-body {
+    position: relative;
+}
+.calendar-grid {
+    background-color: var(--white);
+    margin-left: 88px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.time-grid {
+    display: inline-block;
+    width: 29px;
+    height: 20px;
+    border-left: 2px solid var(--light-gray);
+    border-top: 1px solid var(--light-gray);
+}
+
+.time-grid.border-dashed {
+    border-left: 2px dashed #d5d5d5;
+}
+
+.calendar-grid .data-slot:first-child .time-grid {
+    border-top: 2px solid var(--light-gray);
+}
+
+.calendar-grid .data-slot:last-child div.time-grid {
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.calendar-grid .data-slot .flex-row:last-child {
+    border-right: 2px solid var(--light-gray);
+}
+
+
+.current-timeline {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: red;
+    z-index: 10;
+}
+
+.disabled-slot {
+    background-color: #e7e1e1;
+}
+
+.event-data {
+    position: absolute;
+    z-index: 5;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+}
+
+.event-data::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    transform: translate(3px, -50%);
+    width: 6px;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #d8d8d8;
+}
+
+.event-data::before {
+    content: '||||||';
+    position: absolute;
+    top: 9px;
+    right: -22px;
+    rotate: 90deg;
+    scale: 0.3;
+    color: #d5d5d5;
+    z-index: 10;
+}
+
+.event-data span.text {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: grab;
+}
+
+.event-data span.resize {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    top: 0;
+    right: -5px;
+    z-index: 10;
+    cursor: ew-resize;
+}
+
+.wrapper-date {
+    position: fixed;
+    top: 50px;
+    margin-bottom: 16px;
+}
